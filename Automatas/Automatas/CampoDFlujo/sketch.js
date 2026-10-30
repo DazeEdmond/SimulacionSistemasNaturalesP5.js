@@ -1,4 +1,4 @@
-let xSize = 1500;
+let xSize = 1000;
 let ySize = 1000;
 let ags;
 let grid;
@@ -18,6 +18,7 @@ async function setup() {
 
 function draw() {
     background(0,0,0,20);
+    // grid.display();
 
     if(mouseIsPressed && mouseButton.left){
         ags.push(Agente.createRandomDir(mouseX,mouseY,100));
@@ -35,7 +36,6 @@ function draw() {
         a.update();
         a.display();
     }
-    // grid.display();
 
 }
 
