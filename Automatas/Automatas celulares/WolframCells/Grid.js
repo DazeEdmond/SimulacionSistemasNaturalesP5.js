@@ -5,7 +5,6 @@ class Grid{
         this.cols = cols;
         this.ruleset = {"000":ruleset.at(0),"001":ruleset.at(1),"010":ruleset.at(2),"011":ruleset.at(3),"100":ruleset.at(4),"101":ruleset.at(5),"110":ruleset.at(6),"111":ruleset.at(7)};
         this.cells = cells;
-        this.generations = [];
     }
     nextGen(){
         this.pos.add(createVector(0,this.size));
