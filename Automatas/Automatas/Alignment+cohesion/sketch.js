@@ -10,9 +10,9 @@ function draw() {
     background(0);
 
     agent.update();
-    // agent.align();
+    agent.align();
     agent.cohere();
-    agent.separate();
+    // agent.separate();
     // agent.manada();
 
     if(mouseIsPressed && mouseButton.left) agent.addAgent();
